@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — Vendoro</title>
+  <meta name="description"
+    content="Read Vendoro's Terms of Service. Vendoro is a supplier review and performance management platform for humanitarian organizations and NGOs." />
+  <link rel="canonical" href="https://vendoro.org/terms" />
+
+  <!-- Typography & Icons CDNs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --color-primary: #d81010;
+      --color-primary-hover: #b50d0d;
+      --color-primary-light: #fef2f2;
+      --color-dark: #231f20;
+      --color-bg: #f3f4f6;
+      --color-bg-white: #ffffff;
+      --color-text: #374151;
+      --color-text-muted: #6b7280;
+      --color-border: #e5e7eb;
+
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+
+      --transition-fast: 0.15s ease;
+      --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      width: 100%;
+    }
+
+    /* Sticky Navigation */
+    .header-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(229, 231, 235, 0.7);
+      transition: var(--transition-normal);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      height: 72px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--color-dark);
+    }
+
+    .logo-link span {
+      color: var(--color-primary);
+    }
+
+    .logo-svg {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--color-text);
+      transition: var(--transition-fast);
+      position: relative;
+    }
+
+    .nav-link:hover {
+      color: var(--color-primary);
+    }
+
+    .nav-link.active {
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-primary);
+      border-radius: 2px;
+    }
+
+    .nav-btn {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 0.55rem 1.15rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: var(--transition-fast);
+      border: 1px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-btn:hover {
+      background-color: var(--color-primary-hover);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-1px);
+    }
+
+    .mobile-nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--color-dark);
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    /* Legal Header Banner */
+    .legal-header {
+      background-color: var(--color-dark);
+      background-image: linear-gradient(135deg, var(--color-dark) 0%, #111827 100%);
+      color: white;
+      padding: 4.5rem 0 3.5rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .legal-header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -10%;
+      width: 40%;
+      height: 150%;
+      background: radial-gradient(circle, rgba(216, 16, 16, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+      pointer-events: none;
+    }
+
+    .legal-title-container {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+    }
+
+    .legal-header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .legal-meta {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      font-weight: 500;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    /* Content Area */
+    .legal-body {
+      padding: 4.5rem 0;
+    }
+
+    .legal-card {
+      background-color: var(--color-bg-white);
+      border: 1px solid var(--color-border);
+      border-radius: 1.5rem;
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow-sm);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .legal-card {
+        padding: 4rem;
+      }
+    }
+
+    .legal-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .legal-section:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .legal-section h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--color-dark);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 0.5rem;
+    }
+
+    .legal-section p {
+      font-size: 0.95rem;
+      color: var(--color-text);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+
+    .legal-section ul {
+      margin-bottom: 1.25rem;
+      padding-left: 1.5rem;
+      list-style-type: disc;
+    }
+
+    .legal-section li {
+      font-size: 0.95rem;
+      color: var(--color-text);
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Footer Styles */
+    .footer {
+      background-color: var(--color-dark);
+      color: #e5e7eb;
+      padding: 4rem 0 2rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .footer-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 2rem;
+    }
+
+    @media(min-width: 768px) {
+      .footer-top {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+
+    .footer-logo-desc {
+      max-width: 450px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.75rem;
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-logo span {
+      color: var(--color-primary);
+    }
+
+    .footer-tagline {
+      font-size: 0.875rem;
+      color: #9ca3af;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem 2rem;
+    }
+
+    .footer-link {
+      color: #9ca3af;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: var(--transition-fast);
+    }
+
+    .footer-link:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    @media(min-width: 768px) {
+      .footer-bottom {
+        flex-direction: row;
+        text-align: left;
+      }
+    }
+
+    .footer-credits {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .linkedin-icon-link {
+      color: #38bdf8;
+      font-size: 1.1rem;
+      transition: var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .linkedin-icon-link:hover {
+      color: #7dd3fc;
+      transform: scale(1.1);
+    }
+
+    .footer-copyright {
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+
+    /* Responsiveness down to 375px */
+    @media (max-width: 768px) {
+      .mobile-nav-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--color-bg-white);
+        flex-direction: column;
+        padding: 2.5rem 1.5rem;
+        gap: 2rem;
+        align-items: stretch;
+        box-shadow: var(--shadow-lg);
+        clip-path: circle(0px at 100% 0%);
+        transition: clip-path 0.4s ease-in-out;
+      }
+
+      .nav-links.active {
+        clip-path: circle(150% at 100% 0%);
+      }
+
+      .nav-link {
+        font-size: 1.15rem;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .nav-btn {
+        margin-top: 1rem;
+        justify-content: center;
+        padding: 0.85rem;
+        font-size: 1rem;
+      }
+
+      .legal-header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <svg class="logo-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#e51b1b" />
+              <stop offset="40%" stop-color="#d81010" />
+              <stop offset="100%" stop-color="#8c0707" />
+            </linearGradient>
+            <linearGradient id="vGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff" />
+              <stop offset="50%" stop-color="#f8fafc" />
+              <stop offset="100%" stop-color="#cbd5e1" />
+            </linearGradient>
+            <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#fbbf24" />
+              <stop offset="100%" stop-color="#d97706" />
+            </linearGradient>
+            <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+              <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.25" />
+            </filter>
+          </defs>
+          <rect width="512" height="512" fill="url(#bgGrad)" />
+          <g filter="url(#shadow)">
+            <path d="M140 140 H210 L256 250 L302 140 H372 L272 380 H240 Z" fill="url(#vGrad)" />
+            <polygon points="256,155 272,175 256,195 240,175" fill="url(#accentGrad)" />
+          </g>
+        </svg><span style="white-space: nowrap;"><span style="color: #000000;">Ven</span><span>doro</span></span>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="https://demo.vendoro.org" target="_blank" rel="noopener" class="nav-link">Demo</a>
+        <a href="terms.html" class="nav-link active">Terms</a>
+        <a href="privacy.html" class="nav-link">Privacy</a>
+        <a href="mailto:hello@vendoro.org" class="nav-btn">
+          <i class="fas fa-envelope"></i> Contact
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Legal Header -->
+  <section class="legal-header">
+    <div class="legal-title-container container">
+      <h1>Terms of Service</h1>
+      <div class="legal-meta">
+        <span><strong>Effective Date:</strong> May 29, 2026</span>
+        <span><strong>Last Updated:</strong> May 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Body -->
+  <section class="legal-body">
+    <div class="container">
+      <div class="legal-card">
+
+        <!-- Section 1 -->
+        <div class="legal-section">
+          <h2>1. Acceptance of Terms</h2>
+          <p>By accessing or using Vendoro ("the Platform"), available at vendoro.org and demo.vendoro.org, you agree to
+            be bound by these Terms of Service. If you do not agree, do not use the Platform.</p>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="legal-section">
+          <h2>2. Platform Description</h2>
+          <p>Vendoro is a supplier review and performance management platform designed for non-governmental
+            organizations (NGOs), UN agencies, and humanitarian organizations. It enables authorized users to submit,
+            review, and access supplier performance evaluations across four criteria: Delivery Speed, Quality of Goods
+            and Services, Communication, and Cost Efficiency.</p>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="legal-section">
+          <h2>3. Eligibility</h2>
+          <p>Use of Vendoro is intended for individuals affiliated with NGOs, UN agencies, international organizations,
+            or humanitarian entities involved in procurement or logistics operations. By registering, you confirm that
+            your use is in a professional humanitarian or development context.</p>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="legal-section">
+          <h2>4. User Accounts</h2>
+          <p>You are responsible for maintaining the confidentiality of your account credentials. You agree not to share
+            your login with others. You are responsible for all activity under your account. You must notify us
+            immediately of any unauthorized use at hello@vendoro.org.</p>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="legal-section">
+          <h2>5. User-Generated Content (Reviews)</h2>
+          <p>Reviews and ratings submitted through the Platform must:</p>
+          <ul>
+            <li>Be based on genuine, first-hand procurement experience with the reviewed supplier.</li>
+            <li>Be submitted in good faith and without intent to harm, mislead, or manipulate.</li>
+            <li>Not contain defamatory, discriminatory, or false statements.</li>
+            <li>Not be submitted as retaliation, for competitive purposes, or at the direction of any supplier or third
+              party.</li>
+          </ul>
+          <p>Vendoro reserves the right to remove reviews that violate these standards without prior notice.</p>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="legal-section">
+          <h2>6. Prohibited Use</h2>
+          <p>You agree not to:</p>
+          <ul>
+            <li>Submit fake, fabricated, or incentivized reviews.</li>
+            <li>Attempt to manipulate supplier scores for commercial or personal gain.</li>
+            <li>Use the Platform to harass, threaten, or defame any individual or organization.</li>
+            <li>Scrape, copy, or redistribute Platform data without written permission.</li>
+            <li>Attempt to reverse-engineer, hack, or disrupt the Platform's functionality.</li>
+            <li>Use the Platform for any purpose unrelated to legitimate humanitarian or development procurement.</li>
+          </ul>
+        </div>
+
+        <!-- Section 7 -->
+        <div class="legal-section">
+          <h2>7. Intellectual Property</h2>
+          <p>The Vendoro name, logo, design, codebase, and Platform concept are the intellectual property of Mazen
+            Al-Sakkaf. All rights are reserved. You may not reproduce, distribute, or create derivative works without
+            explicit written permission.</p>
+          <p>User-submitted reviews remain the intellectual property of the submitting user; however, by submitting a
+            review you grant Vendoro a non-exclusive, royalty-free license to display, aggregate, and use that content
+            within the Platform.</p>
+        </div>
+
+        <!-- Section 8 -->
+        <div class="legal-section">
+          <h2>8. Privacy</h2>
+          <p>Your use of the Platform is also governed by our Privacy Policy, which is incorporated into these Terms by
+            reference.</p>
+        </div>
+
+        <!-- Section 9 -->
+        <div class="legal-section">
+          <h2>9. Disclaimers</h2>
+          <p>Reviews on Vendoro represent the individual experiences and opinions of the submitting users. They do not
+            constitute official endorsements, blacklists, or procurement guarantees. Vendoro makes no warranties
+            regarding the accuracy, completeness, or reliability of any supplier review. Procurement decisions remain
+            the sole responsibility of the using organization.</p>
+        </div>
+
+        <!-- Section 10 -->
+        <div class="legal-section">
+          <h2>10. Limitation of Liability</h2>
+          <p>To the fullest extent permitted by applicable law, Vendoro and its developer shall not be liable for any
+            indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to
+            use the Platform, including but not limited to procurement decisions made on the basis of reviews.</p>
+        </div>
+
+        <!-- Section 11 -->
+        <div class="legal-section">
+          <h2>11. Modifications to Terms</h2>
+          <p>We reserve the right to update these Terms at any time. Changes will be posted on this page with an updated
+            effective date. Continued use of the Platform after changes constitutes acceptance of the revised Terms.</p>
+        </div>
+
+        <!-- Section 12 -->
+        <div class="legal-section">
+          <h2>12. Governing Law</h2>
+          <p>These Terms are governed by applicable international standards and, where relevant, the laws of the
+            jurisdiction in which the Platform's services are provided. Any disputes shall be resolved through
+            good-faith negotiation wherever possible.</p>
+        </div>
+
+        <!-- Section 13 -->
+        <div class="legal-section">
+          <h2>13. Contact</h2>
+          <p>For questions about these Terms, contact us at: <a href="mailto:hello@vendoro.org"
+              style="color: var(--color-primary); text-decoration: none; font-weight: 600;">hello@vendoro.org</a></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo-desc">
+          <a href="index.html" class="footer-logo">
+            <svg class="logo-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+              style="width: 32px; height: 32px; box-shadow: none;">
+              <rect width="512" height="512" fill="url(#bgGrad)" rx="128" />
+              <g filter="url(#shadow)">
+                <path d="M140 140 H210 L256 250 L302 140 H372 L272 380 H240 Z" fill="url(#vGrad)" />
+                <polygon points="256,155 272,175 256,195 240,175" fill="url(#accentGrad)" />
+              </g>
+            </svg><span style="white-space: nowrap;"><span style="color: #ffffff;">Ven</span><span>doro</span></span>
+          </a>
+          <p class="footer-tagline">Streamlined Supplier Review Management</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="https://demo.vendoro.org" target="_blank" rel="noopener" class="footer-link">Demo</a>
+          <a href="terms.html" class="footer-link">Terms of Service</a>
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-credits">
+          <span>Built with purpose by Mazen Al-Sakkaf</span>
+          <a href="https://www.linkedin.com/in/mazen-al-sakkaf" target="_blank" rel="noopener"
+            class="linkedin-icon-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="footer-copyright">
+          &copy; 2026 Vendoro &middot; <a href="mailto:hello@vendoro.org"
+            style="color: inherit; text-decoration: none;">hello@vendoro.org</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Responsive mobile menu toggle
+    const toggleBtn = document.querySelector('.mobile-nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const toggleIcon = toggleBtn.querySelector('i');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      if (navLinks.classList.contains('active')) {
+        toggleIcon.className = 'fas fa-times';
+      } else {
+        toggleIcon.className = 'fas fa-bars';
+      }
+    });
+
+    // Close menu when clicking nav link
+    const links = document.querySelectorAll('.nav-link');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        toggleIcon.className = 'fas fa-bars';
+      });
+    });
+  </script>
+</body>
+
+</html>
